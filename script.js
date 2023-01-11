@@ -23,9 +23,7 @@ generateBtn.addEventListener("click", writePassword);
 // validate user num  
 function chooseLength() {
   var length = parseInt(window.prompt("Choose a number between 8 and 128"));
-  // //if(length === Nan){
-  //   window.alert("Choose a whole number");
-  //   chooseLength();
+
   if (length < 8 || length > 128) {
     window.alert("Try again and listen to directions");
     return chooseLength();
@@ -57,15 +55,6 @@ function includeCharacterTypes() {
     return includeCharacterTypes();
   };
   return totalArray
-  // upper = true;
-  // includeLower();
-  // } else if (upper == "n") {
-  //   upper = false;
-  //   // includeLower();
-  // } else {
-  //   window.alert("choose y or n")
-  //   includeUpper();
-  // }
 };
 
 function generatePassword() {
@@ -80,6 +69,25 @@ passwordString += digit
 }
   return passwordString
 };
+
+// needs to go back to begining if none are chosen
+
+
+// previous version
+
+  // //if(length === Nan){
+  //   window.alert("Choose a whole number");
+  //   chooseLength();
+
+  // upper = true;
+  // includeLower();
+  // } else if (upper == "n") {
+  //   upper = false;
+  //   // includeLower();
+  // } else {
+  //   window.alert("choose y or n")
+  //   includeUpper();
+  // }
 
 // needs a for loop somewhere
  // function includeLower(){
